@@ -397,7 +397,11 @@ var InfiniteScroll = (function(_Component) {
               : childrenArray.push(this.defaultLoader);
           }
         }
-        return _react2.default.createElement(element, props, childrenArray);
+        return _react2.default.createElement(
+          _react2.default.Fragment,
+          props,
+          childrenArray
+        );
       }
     }
   ]);
